@@ -1,0 +1,56 @@
+.wrapper{
+	display: flex;
+	position: relative;
+	height: 100vh;
+	min-width: 850px;
+	max-width: 2000px;
+}
+
+.show-screen-error{
+	height: 100vh;
+	display: none;
+	overflow: hidden;
+}
+
+.wrapper .sidebar-nav{
+	position: fixed;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background-color: #28a750;
+	height: 100%;
+	width: 220px;
+}
+
+.wrapper .main-panel{
+	width: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding-left: 220px;
+	background-color: rgba(69, 176, 111, 0.3);
+}
+
+.active-state{
+     background-color: #208941 !important;
+     border-radius: 0 !important;
+     border: none !important;
+     font-weight: 600 !important;
+}
+
+.list-group-item:hover{
+	cursor: pointer;
+	background-color: #208941 !important;
+}
+
+.card-footer:hover{
+	background-color: #28a745;
+	transition: 0.3s ease-out;
+}
+
+@media screen and (max-width: 850px){
+	.wrapper{
+		display: none;
+	}
+	.show-screen-error{
+		display: block;
+	}
+}
